@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		84B873D6213770F30085168D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873D5213770F30085168D /* AppDelegate.swift */; };
-		84B873D8213770F30085168D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873D7213770F30085168D /* ViewController.swift */; };
 		84B873DB213770F30085168D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B873D9213770F30085168D /* Main.storyboard */; };
 		84B873DD213770F50085168D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B873DC213770F50085168D /* Assets.xcassets */; };
 		84B873E0213770F50085168D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B873DE213770F50085168D /* LaunchScreen.storyboard */; };
 		84B873EB213770F50085168D /* FoodPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873EA213770F50085168D /* FoodPinTests.swift */; };
 		84B873F6213770F50085168D /* FoodPinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873F5213770F50085168D /* FoodPinUITests.swift */; };
+		84B87404213772340085168D /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B87403213772340085168D /* RestaurantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		84B873D2213770F30085168D /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B873D5213770F30085168D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84B873D7213770F30085168D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84B873DA213770F30085168D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B873DC213770F50085168D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B873DF213770F50085168D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		84B873F1213770F50085168D /* FoodPinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B873F5213770F50085168D /* FoodPinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinUITests.swift; sourceTree = "<group>"; };
 		84B873F7213770F50085168D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B87403213772340085168D /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				84B873D5213770F30085168D /* AppDelegate.swift */,
-				84B873D7213770F30085168D /* ViewController.swift */,
 				84B873D9213770F30085168D /* Main.storyboard */,
 				84B873DC213770F50085168D /* Assets.xcassets */,
 				84B873DE213770F50085168D /* LaunchScreen.storyboard */,
 				84B873E1213770F50085168D /* Info.plist */,
+				84B87403213772340085168D /* RestaurantTableViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B873D8213770F30085168D /* ViewController.swift in Sources */,
+				84B87404213772340085168D /* RestaurantTableViewController.swift in Sources */,
 				84B873D6213770F30085168D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
