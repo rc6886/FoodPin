@@ -166,11 +166,15 @@ class RestaurantTableViewController: UITableViewController {
     }
 
     func buildCheckInAction(tableView: UITableView, indexPath: IndexPath) -> UIAlertAction {
-        return UIAlertAction(title: "Check In", style: .default, handler: {(action: UIAlertAction!) -> Void in
-            let cell = tableView.cellForRow(at: indexPath)
-            cell?.accessoryType = .checkmark
+        let isCheckedIn = self.restaurantIsVisited[indexPath.row]
+        let title = isCheckedIn ? "Undo Check In" : "Check In"
 
-            self.restaurantIsVisited[indexPath.row] = true
+        return UIAlertAction(title: title, style: .default, handler: {(action: UIAlertAction!) -> Void in
+            let cell = tableView.cellForRow(at: indexPath)
+
+            cell?.accessoryType = isCheckedIn ? .none : .checkmark
+
+            self.restaurantIsVisited[indexPath.row] = !isCheckedIn
         })
     }
 }
