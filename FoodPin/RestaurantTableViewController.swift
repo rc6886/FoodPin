@@ -100,9 +100,13 @@ class RestaurantTableViewController: UITableViewController {
         "Spanish",
         "British",
         "Thai"]
+
+    var restaurantIsVisited = Array(repeating: false, count: 21)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.cellLayoutMarginsFollowReadableWidth = true
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -118,7 +122,55 @@ class RestaurantTableViewController: UITableViewController {
         cell.locationLabel.text = restaurantLocations[indexPath.row]
         cell.typeLabel.text = restaurantTypes[indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
+
+        cell.accessoryType = restaurantIsVisited[indexPath.row]
+            ? .checkmark
+                : .none
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
+
+        if let popoverController = optionMenu.popoverPresentationController {
+            if let cell = tableView.cellForRow(at: indexPath) {
+                popoverController.sourceView = cell
+                popoverController.sourceRect = cell.bounds
+            }
+        }
+        
+        let cancelActions = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+        optionMenu.addAction(cancelActions)
+        optionMenu.addAction(buildCallAction(row: indexPath.row))
+        optionMenu.addAction(buildCheckInAction(tableView: tableView, indexPath: indexPath))
+
+        present(optionMenu, animated: true, completion: nil)
+
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    func buildCallAction(row: Int) -> UIAlertAction {
+        let title = "Call " + "123-000-\(row)"
+
+        return UIAlertAction(title: title, style: .default, handler: {(action: UIAlertAction) -> Void in
+            let alertMessage = UIAlertController(title: "Service Unavailable",
+                    message: "Sorry, the call feature is not available yet. Please retry later.",
+                    preferredStyle: .alert)
+
+            alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+            self.present(alertMessage, animated: true, completion: nil)
+        })
+    }
+
+    func buildCheckInAction(tableView: UITableView, indexPath: IndexPath) -> UIAlertAction {
+        return UIAlertAction(title: "Check In", style: .default, handler: {(action: UIAlertAction!) -> Void in
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = .checkmark
+
+            self.restaurantIsVisited[indexPath.row] = true
+        })
     }
 }
