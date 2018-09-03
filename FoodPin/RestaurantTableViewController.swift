@@ -107,6 +107,7 @@ class RestaurantTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.cellLayoutMarginsFollowReadableWidth = true
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -130,26 +131,36 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
-
-        if let popoverController = optionMenu.popoverPresentationController {
-            if let cell = tableView.cellForRow(at: indexPath) {
-                popoverController.sourceView = cell
-                popoverController.sourceRect = cell.bounds
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRestaurantDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! RestaurantDetailViewController
+                
+                destinationController.restaurantImageName = restaurantImages[indexPath.row]
             }
         }
-        
-        let cancelActions = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-
-        optionMenu.addAction(cancelActions)
-        optionMenu.addAction(buildCallAction(row: indexPath.row))
-        optionMenu.addAction(buildCheckInAction(tableView: tableView, indexPath: indexPath))
-
-        present(optionMenu, animated: true, completion: nil)
-
-        tableView.deselectRow(at: indexPath, animated: true)
     }
+//    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
+//
+//        if let popoverController = optionMenu.popoverPresentationController {
+//            if let cell = tableView.cellForRow(at: indexPath) {
+//                popoverController.sourceView = cell
+//                popoverController.sourceRect = cell.bounds
+//            }
+//        }
+//        
+//        let cancelActions = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//
+//        optionMenu.addAction(cancelActions)
+//        optionMenu.addAction(buildCallAction(row: indexPath.row))
+//        optionMenu.addAction(buildCheckInAction(tableView: tableView, indexPath: indexPath))
+//
+//        present(optionMenu, animated: true, completion: nil)
+//
+//        tableView.deselectRow(at: indexPath, animated: true)
+//    }
 
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: {(action, sourceView, completionHandler) in
