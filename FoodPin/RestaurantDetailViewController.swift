@@ -9,25 +9,8 @@
 import UIKit
 
 class RestaurantDetailViewController: UIViewController {
-    var restaurantImageName = ""
-    var restaurantName = ""
-    var restaurantType = ""
-    var restaurantLocation = ""
-    
-    @IBOutlet weak var restaurantImageView: UIImageView!
-    @IBOutlet weak var restaurantNameLabel: UILabel!
-    @IBOutlet weak var restaurantTypeLabel: UILabel!
-    @IBOutlet weak var restaurantLocationLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        restaurantImageView.image = UIImage(named: restaurantImageName)
-        restaurantNameLabel.text = restaurantName
-        restaurantTypeLabel.text = restaurantType
-        restaurantLocationLabel.text = restaurantLocation
-        
-        navigationItem.largeTitleDisplayMode = .never
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +18,6 @@ class RestaurantDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -45,5 +27,4 @@ class RestaurantDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
