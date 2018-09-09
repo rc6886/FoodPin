@@ -10,6 +10,17 @@
 		848193F4213DAD1C006CD23D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848193F3213DAD1C006CD23D /* RestaurantDetailViewController.swift */; };
 		848193F62145AE22006CD23D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848193F52145AE22006CD23D /* Restaurant.swift */; };
 		848193F82145AF2B006CD23D /* RestaurantFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848193F72145AF2B006CD23D /* RestaurantFactory.swift */; };
+		848194062145DD18006CD23D /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848193FB2145DD16006CD23D /* Rubik-Bold.ttf */; };
+		848194072145DD18006CD23D /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848193FC2145DD16006CD23D /* Rubik-BoldItalic.ttf */; };
+		848194082145DD18006CD23D /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848193FD2145DD16006CD23D /* Rubik-Italic.ttf */; };
+		848194092145DD18006CD23D /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848193FE2145DD17006CD23D /* Rubik-Light.ttf */; };
+		8481940A2145DD18006CD23D /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 848193FF2145DD17006CD23D /* OFL.txt */; };
+		8481940B2145DD18006CD23D /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194002145DD17006CD23D /* Rubik-BlackItalic.ttf */; };
+		8481940C2145DD18006CD23D /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194012145DD17006CD23D /* Rubik-Medium.ttf */; };
+		8481940D2145DD18006CD23D /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194022145DD17006CD23D /* Rubik-LightItalic.ttf */; };
+		8481940E2145DD18006CD23D /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194032145DD17006CD23D /* Rubik-MediumItalic.ttf */; };
+		8481940F2145DD18006CD23D /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194042145DD18006CD23D /* Rubik-Black.ttf */; };
+		848194102145DD18006CD23D /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194052145DD18006CD23D /* Rubik-Regular.ttf */; };
 		84B873D6213770F30085168D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873D5213770F30085168D /* AppDelegate.swift */; };
 		84B873DB213770F30085168D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B873D9213770F30085168D /* Main.storyboard */; };
 		84B873DD213770F50085168D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B873DC213770F50085168D /* Assets.xcassets */; };
@@ -41,6 +52,17 @@
 		848193F3213DAD1C006CD23D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		848193F52145AE22006CD23D /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		848193F72145AF2B006CD23D /* RestaurantFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFactory.swift; sourceTree = "<group>"; };
+		848193FB2145DD16006CD23D /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		848193FC2145DD16006CD23D /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		848193FD2145DD16006CD23D /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		848193FE2145DD17006CD23D /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		848193FF2145DD17006CD23D /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		848194002145DD17006CD23D /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		848194012145DD17006CD23D /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		848194022145DD17006CD23D /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		848194032145DD17006CD23D /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		848194042145DD18006CD23D /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		848194052145DD18006CD23D /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		84B873D2213770F30085168D /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B873D5213770F30085168D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B873DA213770F30085168D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +104,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848193F92145DCE5006CD23D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				848193FA2145DCF7006CD23D /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		848193FA2145DCF7006CD23D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				848193FF2145DD17006CD23D /* OFL.txt */,
+				848194042145DD18006CD23D /* Rubik-Black.ttf */,
+				848194002145DD17006CD23D /* Rubik-BlackItalic.ttf */,
+				848193FB2145DD16006CD23D /* Rubik-Bold.ttf */,
+				848193FC2145DD16006CD23D /* Rubik-BoldItalic.ttf */,
+				848193FD2145DD16006CD23D /* Rubik-Italic.ttf */,
+				848193FE2145DD17006CD23D /* Rubik-Light.ttf */,
+				848194022145DD17006CD23D /* Rubik-LightItalic.ttf */,
+				848194012145DD17006CD23D /* Rubik-Medium.ttf */,
+				848194032145DD17006CD23D /* Rubik-MediumItalic.ttf */,
+				848194052145DD18006CD23D /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		84B873C9213770F30085168D = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +153,7 @@
 		84B873D4213770F30085168D /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				848193F92145DCE5006CD23D /* Resources */,
 				84B873D5213770F30085168D /* AppDelegate.swift */,
 				84B873D9213770F30085168D /* Main.storyboard */,
 				84B873DC213770F50085168D /* Assets.xcassets */,
@@ -241,9 +290,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848194072145DD18006CD23D /* Rubik-BoldItalic.ttf in Resources */,
+				848194102145DD18006CD23D /* Rubik-Regular.ttf in Resources */,
+				8481940F2145DD18006CD23D /* Rubik-Black.ttf in Resources */,
 				84B873E0213770F50085168D /* LaunchScreen.storyboard in Resources */,
+				8481940B2145DD18006CD23D /* Rubik-BlackItalic.ttf in Resources */,
+				8481940D2145DD18006CD23D /* Rubik-LightItalic.ttf in Resources */,
+				848194082145DD18006CD23D /* Rubik-Italic.ttf in Resources */,
+				848194062145DD18006CD23D /* Rubik-Bold.ttf in Resources */,
 				84B873DD213770F50085168D /* Assets.xcassets in Resources */,
+				8481940E2145DD18006CD23D /* Rubik-MediumItalic.ttf in Resources */,
+				848194092145DD18006CD23D /* Rubik-Light.ttf in Resources */,
+				8481940A2145DD18006CD23D /* OFL.txt in Resources */,
 				84B873DB213770F30085168D /* Main.storyboard in Resources */,
+				8481940C2145DD18006CD23D /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
