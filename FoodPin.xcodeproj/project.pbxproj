@@ -21,6 +21,7 @@
 		8481940E2145DD18006CD23D /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194032145DD17006CD23D /* Rubik-MediumItalic.ttf */; };
 		8481940F2145DD18006CD23D /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194042145DD18006CD23D /* Rubik-Black.ttf */; };
 		848194102145DD18006CD23D /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848194052145DD18006CD23D /* Rubik-Regular.ttf */; };
+		848194122145E6F5006CD23D /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848194112145E6F5006CD23D /* RestaurantDetailHeaderView.swift */; };
 		84B873D6213770F30085168D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B873D5213770F30085168D /* AppDelegate.swift */; };
 		84B873DB213770F30085168D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B873D9213770F30085168D /* Main.storyboard */; };
 		84B873DD213770F50085168D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B873DC213770F50085168D /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		848194032145DD17006CD23D /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
 		848194042145DD18006CD23D /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		848194052145DD18006CD23D /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		848194112145E6F5006CD23D /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		84B873D2213770F30085168D /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B873D5213770F30085168D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B873DA213770F30085168D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				848193F3213DAD1C006CD23D /* RestaurantDetailViewController.swift */,
 				848193F52145AE22006CD23D /* Restaurant.swift */,
 				848193F72145AF2B006CD23D /* RestaurantFactory.swift */,
+				848194112145E6F5006CD23D /* RestaurantDetailHeaderView.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				848193F62145AE22006CD23D /* Restaurant.swift in Sources */,
 				848193F82145AF2B006CD23D /* RestaurantFactory.swift in Sources */,
 				84B87404213772340085168D /* RestaurantTableViewController.swift in Sources */,
+				848194122145E6F5006CD23D /* RestaurantDetailHeaderView.swift in Sources */,
 				84B87406213783D60085168D /* RestaurantTableViewCell.swift in Sources */,
 				848193F4213DAD1C006CD23D /* RestaurantDetailViewController.swift in Sources */,
 				84B873D6213770F30085168D /* AppDelegate.swift in Sources */,

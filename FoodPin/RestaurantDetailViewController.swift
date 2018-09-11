@@ -9,22 +9,24 @@
 import UIKit
 
 class RestaurantDetailViewController: UIViewController {
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var headerView: RestaurantDetailHeaderView!
+    
+    var restaurant: Restaurant = Restaurant();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.largeTitleDisplayMode = .never
+        
+        headerView.nameLabel.text = restaurant.name
+        headerView.typeLabel.text = restaurant.type
+        headerView.headerImageView.image = UIImage(named: restaurant.image)
+        headerView.heartImageView.isHidden = !restaurant.isVisited
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

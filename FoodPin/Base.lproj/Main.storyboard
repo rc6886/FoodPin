@@ -108,40 +108,58 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-m8-aXB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="POS-nM-UOK" userLabel="Header View">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="POS-nM-UOK" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNJ-xe-k3a" userLabel="Header Image View">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-Bl-2Pr" userLabel="Name Label">
-                                            <rect key="frame" x="36" y="244" width="92" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-Bl-2Pr" userLabel="Name Label">
+                                            <rect key="frame" x="14" y="271" width="91.5" height="42"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SA-Ps-HTF" userLabel="Type Label">
-                                            <rect key="frame" x="32" y="294" width="100" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SA-Ps-HTF" userLabel="Type Label">
+                                            <rect key="frame" x="14" y="316" width="100" height="20"/>
                                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="89H-I1-nYl"/>
+                                                <constraint firstAttribute="height" constant="20" id="edg-61-HXG"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAc-p5-VMs" userLabel="Heart Image View">
-                                            <rect key="frame" x="140" y="294" width="20" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QAc-p5-VMs" userLabel="Heart Image View">
+                                            <rect key="frame" x="122" y="316" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="THC-hA-0nV"/>
+                                                <constraint firstAttribute="height" constant="20" id="kCR-G0-ICe"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstItem="1SA-Ps-HTF" firstAttribute="top" secondItem="wG1-Bl-2Pr" secondAttribute="bottom" constant="3" id="Fb3-lY-gFb"/>
                                         <constraint firstItem="YNJ-xe-k3a" firstAttribute="leading" secondItem="POS-nM-UOK" secondAttribute="leading" id="G1w-Ou-r17"/>
                                         <constraint firstAttribute="trailing" secondItem="YNJ-xe-k3a" secondAttribute="trailing" id="PyR-IW-Plr"/>
                                         <constraint firstItem="YNJ-xe-k3a" firstAttribute="top" secondItem="POS-nM-UOK" secondAttribute="top" id="Qsq-eQ-ndZ"/>
+                                        <constraint firstItem="QAc-p5-VMs" firstAttribute="leading" secondItem="1SA-Ps-HTF" secondAttribute="trailing" constant="8" id="TTD-jj-6RQ"/>
+                                        <constraint firstItem="QAc-p5-VMs" firstAttribute="centerY" secondItem="1SA-Ps-HTF" secondAttribute="centerY" id="f35-Op-hTP"/>
+                                        <constraint firstAttribute="bottom" secondItem="1SA-Ps-HTF" secondAttribute="bottom" constant="14" id="j6s-wi-I8t"/>
+                                        <constraint firstItem="wG1-Bl-2Pr" firstAttribute="leading" secondItem="1SA-Ps-HTF" secondAttribute="leading" id="juj-9X-bdd"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wG1-Bl-2Pr" secondAttribute="trailing" constant="50" id="lLz-hp-scE"/>
                                         <constraint firstAttribute="bottom" secondItem="YNJ-xe-k3a" secondAttribute="bottom" id="q0R-mv-0LQ"/>
+                                        <constraint firstItem="1SA-Ps-HTF" firstAttribute="leading" secondItem="POS-nM-UOK" secondAttribute="leading" constant="14" id="u53-BK-hhb"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="headerImageView" destination="YNJ-xe-k3a" id="4M8-fG-Orp"/>
+                                        <outlet property="heartImageView" destination="QAc-p5-VMs" id="Erc-KT-O1Y"/>
+                                        <outlet property="nameLabel" destination="wG1-Bl-2Pr" id="AMx-mY-441"/>
+                                        <outlet property="typeLabel" destination="1SA-Ps-HTF" id="abJ-rs-108"/>
+                                    </connections>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JL8-WM-NsR">
@@ -172,6 +190,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="znR-s7-Zl6"/>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="POS-nM-UOK" id="Qvk-Sy-nef"/>
+                        <outlet property="tableView" destination="cMU-m8-aXB" id="ZiV-lg-x2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H22-su-lZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
